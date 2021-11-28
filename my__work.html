@@ -49,7 +49,7 @@
         <main class="main__grid">
             <div class="main__div__left--center">
                 <div>
-                    <h2>A story how we geto to the desert</h2>
+                    <h2>A story how we get to to the desert</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, facilis quod nam
                         voluptatibus id asperiores in quae minus dignissimos sint autem officia vel fugit error eum!
@@ -160,6 +160,54 @@
                     aspernatur! Aspernatur tempora obcaecati unde magni adipisci enim ullam optio error necessitatibus
                     odio nesciunt voluptas omnis, eaque dicta?</p>
             </div>
+        </footer>
+        <footer class="footer--form">
+            <h1>Write to us</h1>
+            <form>
+                <div>
+                    <label>
+                        <span>Name:</span>
+                        <input type="text" placeholder="Enter your name" id="name" name="userName">
+                        <span>Email:</span>
+                        <input type="email" placeholder="Enter your valid mail" id="email" name="userEmail">
+                        <span>Phone:</span>
+                        <input type="tel" placeholder="Enter your phone number" id="telephone" name="userTelephone">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <p>Contact me via:</p>
+                        <span>Email</span>
+                        <input type="radio" id="contact__email" name="contact__form" value="contact--email">
+                        <span>Phone</span>
+                        <input type="radio" id="contact__phone" name="contact__form" value="contact--phone">
+                        <span>Telegram</span>
+                        <input type="radio" id="contact__telegram" name="contact__form" value="contact--telegram">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <p>Topic:</p>
+                        <input type="text" id="topic" name="user__topic" list="user__topic" placeholder="Post my story">
+                        <datalist id="user__topic">
+                            <option value="Twitter">Twitter</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Telegram">Telegram</option>
+                        </datalist>   
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <p>Message:</p>
+                        <textarea name="user__message" id="user__message" cols="30" rows="10" placeholder="Here you can write some information for us. Thank you"></textarea>></textarea>
+                    </label>
+                </div>
+                <div>
+                    <span class="footer--form__text--padding">I`m a human</span>
+                    <input type="checkbox" name="check__human" id="check">
+                    <button type="submit" class="float__btn">Send</button>
+                </div>
+            </form>
         </footer>
 
     </div>
