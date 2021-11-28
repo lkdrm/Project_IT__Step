@@ -5,40 +5,49 @@ body {
 
 .header__grid {
     display: grid;
-    grid-template-columns: 90px 50px 50px 50px 50px;
-    grid-gap: 0px 40px;
-    background-color: burlywood;
+    grid-template-columns: 250px 90px 90px 90px 90px auto;
+    grid-gap: 0px 20px ;
+    align-items: end;
     color: whitesmoke;
-    border-radius: 0px 0px 10px 10px;
-}
-
-.header__grid div {
-    border: 2px solid black;
+    border-bottom: 1px solid black;
 }
 
 .header__grid:nth-child(1) {
-    padding-left: 10px;
-    font-family: cursive;
+    color: #000;
 }
 
-.header__grid div p {
-    position: absolute;
+.header__grid div h2 {
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+
+.header__end--photos {
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.header__end--photos div {
+    padding: 5px;
+}
+
+.header__end--photos div img {
+    width: 30px;
+    height: 30px;
 }
 
 .grid__wrap {
     display: grid;
     margin-top: 10px;
     margin-left: 5px;
-    grid-template-columns: 950px 320px ;
+    grid-template-columns: 1250px;
     grid-gap: 5px 5px;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
-    "main side"
+    "main ."
     "footer footer";
 }
 
 .main__grid, 
-.aside__grid,
 .footer__grid {
     display: grid;
     border:1px solid black;
@@ -46,15 +55,43 @@ body {
 
 .main__grid {
     grid-area: main;
-    background-color: violet;
+}
+.main__grid div {
+    border-bottom: 1px solid black;
 }
 
-.aside__grid {
-    grid-area: side;
-    background-color: yellow;
+.main__div__left--center {
+    display: grid;
+    grid-template-columns: 750px auto;
+    text-align: center;
+}
+
+.main__div__left--center div img{
+    float: right;
+}
+
+.main__div__right--center {
+    display: grid;
+    grid-template-columns: auto 750px;
+    text-align: center;
+}
+
+.main__div__right--center div:nth-child(1) {
+    order: 2;
+}
+
+.main__div__right--center div:nth-child(2) {
+    order: 1;
+}
+.main__div__right--center div img {
+    float: left;
 }
 
 .footer__grid {
     grid-area: footer;
-    background-color: tomato;
+}
+
+.sizze {
+    height: 450px;
+    width: 500px;
 }
