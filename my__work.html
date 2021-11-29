@@ -15,16 +15,16 @@
             <h2>tour-giude</h2>
         </div>
         <div>
-            <p>Stories</p>
+            <a href="#story"><p>Stories</p></a>
         </div>
         <div>
-            <p>Gallery</p>
+            <a href="#gallery"><p>Gallery</p></a>
         </div>
         <div>
-            <p>Features</p>
+            <a href="#features"><p>Features</p></a>
         </div>
         <div>
-            <p>Write to us</p>
+            <a href="#write"><p>Write to us</p></a>
         </div>
         <div class="header__end--photos">
             <div>
@@ -49,7 +49,7 @@
         <main class="main__grid">
             <div class="main__div__left--center">
                 <div>
-                    <h2>A story how we get to to the desert</h2>
+                    <h2 id="story">A story how we get to to the desert</h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, facilis quod nam
                         voluptatibus id asperiores in quae minus dignissimos sint autem officia vel fugit error eum!
@@ -113,7 +113,13 @@
         </main>
 
         <footer class="footer__grid--gallery">
-            <h1>Gallery</h1>
+            <div>
+                
+            </div>
+            <h1 id="gallery">Gallery</h1>
+            <div>
+
+            </div>
             <div>
                 <img src="photos/van1.jpg" alt="van_in_desert">
             </div>
@@ -126,6 +132,13 @@
         </footer>
 
         <footer class="footer__grid--chart">
+            <div>
+                
+            </div>
+            <h1 id="features">Features</h1>
+            <div>
+
+            </div>
             <div>
                 <img src="icons/airplane-48.png" alt="airplane">
                 <h4>Airplane</h4>
@@ -162,17 +175,21 @@
             </div>
         </footer>
         <footer class="footer--form">
-            <h1>Write to us</h1>
+            <h1 id="write">Write to us</h1>
             <form>
-                <div>
-                    <label>
-                        <span>Name:</span>
+                <div class="footer--form--flex__contact">
+                    <div>
+                        <label for="name">Name:</label><br>
                         <input type="text" placeholder="Enter your name" id="name" name="userName">
-                        <span>Email:</span>
+                    </div>
+                    <div>    
+                    <label for="email">Email:</label><br>
                         <input type="email" placeholder="Enter your valid mail" id="email" name="userEmail">
-                        <span>Phone:</span>
+                    </div>
+                    <div>  
+                    <label for="telephone">Phone:</label><br>
                         <input type="tel" placeholder="Enter your phone number" id="telephone" name="userTelephone">
-                    </label>
+                    </div>
                 </div>
                 <div>
                     <label>
@@ -196,7 +213,7 @@
                         </datalist>   
                     </label>
                 </div>
-                <div>
+                <div class="message__padding">
                     <label>
                         <p>Message:</p>
                         <textarea name="user__message" id="user__message" cols="30" rows="10" placeholder="Here you can write some information for us. Thank you"></textarea>></textarea>
@@ -210,6 +227,28 @@
             </form>
         </footer>
 
+        <footer class="footer__end">
+            <div class="footer__end--photos">
+                <div>
+                    <a href="https://twitter.com"> <img src="icons/twitter-128.png" alt="twitter"></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com"><img src="icons/facebook-128.png" alt="facebook"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com"><img src="icons/instagram-2-128.png" alt="instagram"></a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com"><img src="icons/youtube-128.png" alt="youtube"></a>
+                </div>
+                <div>
+                    <a href="https://mail.google.com/"><img src="icons/gmail-128.png" alt="gmail"></a>
+                </div>
+            </div>
+            <div class="untld">
+                <p>UNTITLED 2021</p>
+            </div>
+        </footer>
     </div>
 </body>
 

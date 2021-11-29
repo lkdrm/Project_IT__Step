@@ -46,7 +46,8 @@ body {
     "main ."
     "footer--gallery ."
     "footer--chart ." 
-    "footer--form .";
+    "footer--form ."
+    "footer--end .";
 }
 
 .main__grid, 
@@ -140,25 +141,25 @@ body {
    padding: 20px;
 }
 
-.footer__grid--chart div:nth-child(1) {
-    border-right: 2px solid rgba(128, 128, 128, 0.596);
-    border-bottom: 2px solid rgba(128, 128, 128, 0.596);
-}
-
-.footer__grid--chart div:nth-child(2) {
-    border-right: 2px solid rgba(128, 128, 128, 0.596);
-    border-bottom: 2px solid rgba(128, 128, 128, 0.596);
-}
-
-.footer__grid--chart div:nth-child(3) {
-    border-bottom: 2px solid rgba(128, 128, 128, 0.596);
-}
-
 .footer__grid--chart div:nth-child(4) {
     border-right: 2px solid rgba(128, 128, 128, 0.596);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.596);
 }
 
 .footer__grid--chart div:nth-child(5) {
+    border-right: 2px solid rgba(128, 128, 128, 0.596);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.596);
+}
+
+.footer__grid--chart div:nth-child(6) {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.596);
+}
+
+.footer__grid--chart div:nth-child(7) {
+    border-right: 2px solid rgba(128, 128, 128, 0.596);
+}
+
+.footer__grid--chart div:nth-child(8) {
     border-right: 2px solid rgba(128, 128, 128, 0.596);    
 }
 
@@ -166,18 +167,24 @@ body {
     grid-area: footer--form;
     justify-items: center;
     border-bottom:2px solid gray;
+    padding-bottom: 50px;
 }
 
 .footer--form h1 {
     text-align: center;
 }
 
-.footer--form form div {
-    padding: 10px;
-}
-
 .footer--form__text--padding {
     padding-left: 5px;
+}
+
+.footer--form--flex__contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message__padding {
+    padding-bottom: 20px;
 }
 
 .float__btn {
@@ -196,4 +203,32 @@ body {
 
 #user__message {
     width: 41rem;
+}
+
+.footer__end {
+    grid-area: footer--end;
+}
+
+.footer__end--photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__end--photos div img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__end--photos div {
+    margin-right: 5px;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.untld {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
