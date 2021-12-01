@@ -232,3 +232,70 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+@media screen and ( max-width: 600px
+ ) {
+    .header__grid div:nth-child(2) {
+         display: none;
+            }
+    .header__grid div:nth-child(3) {
+        display: none;
+    }
+    .header__grid div:nth-child(4) {
+        display: none;
+    }
+    .header__grid div:nth-child(5) {
+        display: none;
+    }
+    .header__end--photos {
+        display: none;
+    }
+    .grid__wrap {
+        grid-template-columns:450px;
+    }
+    .main__div__left--center {
+        grid-template-columns: 450px;
+    }
+    .main__div__left--center div img {
+        float: none;
+    }
+    .main__div__left--center div:nth-child(1) {
+        order: 2;
+        margin-bottom: 10px;
+    }
+    .main__div__right--center {
+        grid-template-columns: 450px;
+        margin-bottom: 10px;
+    }
+    .main__img--sizze {
+        height: 420px;
+        width: 435px;
+    }
+    .main__grid div {
+        border-bottom: none;
+    }
+    .footer--form--flex__contact {
+        flex-direction: column;
+    }
+    .footer--form__text--padding{
+        padding-right: 10px;
+    }
+    .float__btn {
+        float: none;
+    }
+    #name {
+        width: 27rem;
+    }
+    #email {
+        width: 27rem;
+    }
+    #telephone {
+        width: 27rem;
+    }
+    #topic {
+        width: 27rem;
+    }
+    #user__message {
+        width: 27rem;
+    }
+ }
