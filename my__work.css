@@ -322,5 +322,26 @@ body {
     .header__end--photos {
         display: none;
     }
+    .grid__wrap {
+        grid-template-columns:700px;
+    }
+    .main__div__left--center {
+        grid-template-columns: 385px 335px;
+    }
+    .main__div__left--center div button {
+        margin-bottom: 5px;
+    }
+    
+    .main__div__right--center {
+        grid-template-columns: 335px 385px;
+        margin-bottom: none;
+    }
+    .main__div__right--center div button {
+        margin-bottom: 5px;
+    }
+    .main__img--sizze {
+        height: 395px;
+        width: 345px;
+    }
  }
     
