@@ -123,17 +123,14 @@ body {
 
 .footer__grid--gallery {
     grid-area: footer--gallery;
-    display: inline-block;
+    grid-template-columns: 417px 417px 417px;
     text-align:center;
     margin-top: 50px;
 }
-.footer__grid--gallery div {
-    float: left;
-}
 
 .footer__grid--gallery img {
-    height: 350px;
-    width: 415px;
+        height: 350px;
+        width: 415px;
 }
 
 .footer__grid--chart {
@@ -291,6 +288,13 @@ body {
     .main__grid div {
         border-bottom: none;
     }
+    .footer__grid--gallery {
+        grid-template-columns: 245px 235px 240px;
+    }
+    .footer__grid--gallery img {
+        width: 240px;
+        height: 235px;
+    }
     .footer--form--flex__contact {
         flex-direction: column;
     }
@@ -342,6 +346,13 @@ body {
     .main__img--sizze {
         height: 395px;
         width: 345px;
+    }
+    .footer__grid--gallery {
+        grid-template-columns: 245px 235px 240px;
+    }
+    .footer__grid--gallery img {
+        width: 240px;
+        height: 235px;
     }
  }
     
