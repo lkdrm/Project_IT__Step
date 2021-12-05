@@ -133,6 +133,37 @@ body {
         width: 415px;
 }
 
+.footer__grid--gallery--hvr{
+    width: 415px;
+    height: 350px;
+    position: relative;
+}
+
+.footer_grid--gallery--product,.footer_grid--gallery--description {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.footer_grid--gallery--description {
+    box-sizing: border-box;
+    padding: 40px;
+    transform: rotateY(180deg);
+}
+
+.footer__grid--gallery--hvr:hover .footer_grid--gallery--product {
+    transform: rotateY(180deg);
+}
+
+.footer__grid--gallery--hvr:hover .footer_grid--gallery--description {
+    transform: rotateY(360deg);
+}
+
 .footer__grid--chart {
     grid-area: footer--chart;
     grid-template-columns: auto auto auto;    
