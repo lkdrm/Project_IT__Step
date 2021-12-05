@@ -26,6 +26,35 @@ body {
     margin-left: 40px;
 }
 
+.header__menu{
+    position: relative;
+    display: none;
+}
+
+.header__dropbtn {
+    cursor: pointer;
+}
+
+.header__dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__dropdown-content a {
+    color: black;
+    display: block;
+}
+
+.header__menu:hover .header__dropdown-content {
+    display: block;
+  }
+
+.header__menu--size {
+    height: 30px;
+    width: 30px;
+}
+
 .header__end--photos {
     display: inline-flex;
     justify-content: flex-end;
@@ -296,6 +325,9 @@ body {
     }
     .header__end--photos {
         display: none;
+    }
+    .header__menu{
+        display: inline-block;
     }
     .grid__wrap {
         grid-template-columns:450px;
