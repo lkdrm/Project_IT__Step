@@ -322,6 +322,10 @@ body {
     .footer__grid--gallery {
         grid-template-columns: 245px 235px 240px;
     }
+    .footer__grid--gallery--hvr {
+        width: 240px;
+        height: 235px;
+    }
     .footer__grid--gallery img {
         width: 240px;
         height: 235px;
@@ -381,6 +385,10 @@ body {
     .footer__grid--gallery {
         grid-template-columns: 245px 235px 240px;
     }
+    .footer__grid--gallery--hvr {
+        width: 240px;
+        height: 235px;
+    }    
     .footer__grid--gallery img {
         width: 240px;
         height: 235px;
