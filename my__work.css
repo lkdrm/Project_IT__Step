@@ -154,6 +154,7 @@ body {
     box-sizing: border-box;
     padding: 40px;
     transform: rotateY(180deg);
+    opacity: 0;
 }
 
 .footer__grid--gallery--hvr:hover .footer_grid--gallery--product {
@@ -162,6 +163,7 @@ body {
 
 .footer__grid--gallery--hvr:hover .footer_grid--gallery--description {
     transform: rotateY(360deg);
+    opacity: 1;
 }
 
 .footer__grid--chart {
