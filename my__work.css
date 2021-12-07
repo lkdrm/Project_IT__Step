@@ -309,87 +309,6 @@ body {
     justify-content: center;
 }
 
-@media screen and ( max-width: 600px
- ) {
-    .header__grid div:nth-child(2) {
-         display: none;
-            }
-    .header__grid div:nth-child(3) {
-        display: none;
-    }
-    .header__grid div:nth-child(4) {
-        display: none;
-    }
-    .header__grid div:nth-child(5) {
-        display: none;
-    }
-    .header__end--photos {
-        display: none;
-    }
-    .header__menu{
-        display: inline-block;
-    }
-    .grid__wrap {
-        grid-template-columns:450px;
-    }
-    .main__div__left--center {
-        grid-template-columns: 450px;
-    }
-    .main__div__left--center div img {
-        float: none;
-    }
-    .main__div__left--center div:nth-child(1) {
-        order: 2;
-        margin-bottom: 10px;
-    }
-    .main__div__right--center {
-        grid-template-columns: 450px;
-        margin-bottom: 10px;
-    }
-    .main__img--sizze {
-        height: 420px;
-        width: 435px;
-    }
-    .main__grid div {
-        border-bottom: none;
-    }
-    .footer__grid--gallery {
-        grid-template-columns: 245px 235px 240px;
-    }
-    .footer__grid--gallery--hvr {
-        width: 240px;
-        height: 235px;
-    }
-    .footer__grid--gallery img {
-        width: 240px;
-        height: 235px;
-    }
-    .footer--form--flex__contact {
-        flex-direction: column;
-    }
-    .footer--form__text--padding{
-        padding-right: 10px;
-    }
-    .float__btn {
-        float: none;
-    }
-    #name {
-        width: 27rem;
-    }
-    #email {
-        width: 27rem;
-    }
-    #telephone {
-        width: 27rem;
-    }
-    #topic {
-        width: 27rem;
-    }
-    #user__message {
-        width: 27rem;
-    }
- }
-
 @media screen and (max-width: 850px
  ) {
     .header__end--photos {
@@ -428,4 +347,102 @@ body {
         height: 235px;
     }
  }
+
+@media screen and ( max-width: 600px
+ ) {
+    .header__grid div:nth-child(2) {
+         display: none;
+            }
+    .header__grid div:nth-child(3) {
+        display: none;
+    }
+    .header__grid div:nth-child(4) {
+        display: none;
+    }
+    .header__grid div:nth-child(5) {
+        display: none;
+    }
+    .header__end--photos {
+        display: none;
+    }
+    .header__menu{
+        display: inline-block;
+    }
+    .grid__wrap {
+        grid-template-columns:320px;
+    }
+    .main__div__left--center {
+        grid-template-columns: 335px;
+    }
+    .main__div__left--center div img {
+        float: none;
+    }
+    .main__div__left--center div:nth-child(1) {
+        order: 2;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 35px;
+    }
+    .main__div__right--center {
+        grid-template-columns: 335px;
+        margin-bottom: 10px;
+    }
+    .main__div__right--center div:nth-child(1) {
+        padding-left: 10px;
+        padding-right: 35px;
+    }
+    .main__img--sizze {
+        height: 320px;
+        width: 312px;
+    }
+    .main__grid div {
+        border-bottom: none;
+    }
+    .footer__grid--gallery {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__grid--gallery--hvr {
+        width: 240px;
+        height: 235px;
+    }
+    .footer__grid--gallery img {
+        width: 240px;
+        height: 235px;
+    }
+    .footer__grid--chart {
+        grid-template-columns: auto;
+    }
+    .footer__grid--chart div {
+        border-bottom: 2px solid rgba(128, 128, 128, 0.596);
+    }
+    .footer__grid--chart div:nth-child(1){
+        display: none;
+    }
+    .footer--form--flex__contact {
+        flex-direction: column;
+    }
+    .footer--form__text--padding{
+        padding-right: 10px;
+    }
+    .float__btn {
+        float: none;
+    }
+    #name {
+        width: 19rem;
+    }
+    #email {
+        width: 19rem;
+    }
+    #telephone {
+        width: 19rem;
+    }
+    #topic {
+        width: 19rem;
+    }
+    #user__message {
+        width: 19rem;
+    }
+ }
+
     
